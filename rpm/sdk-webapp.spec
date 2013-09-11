@@ -51,7 +51,7 @@ Requires:   %{name} = %{version}-%{release}
 Translations for pootle
 
 %prep
-%setup -q -n src
+%setup -q -n %{name}-%{version}
 
 # >> setup
 # << setup
