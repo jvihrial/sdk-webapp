@@ -1,0 +1,99 @@
+* Tue Aug 20 2013 David Greaves <david@dgreaves.com> - 0.6.6-1
+- Move provider json from /etc/mersdk/providers.json to /usr/lib/sdk-webapp-bundle/config
+
+* Fri Aug 16 2013 David Greaves <david@dgreaves.com> - 0.6.5-1
+- Correctly allow use of default target name from Provider (and include in translation)
+- Don't preload stuff when just doing css handling
+- Report various errors when adding a target
+- Message presentation via simple 'Flash'
+- Use new Toolchain class
+- Ensure the correct toolchain is installed
+- Use a Toolchain class caching current set
+
+* Fri Jul 26 2013 David Greaves <david@dgreaves.com> - 0.6.4-1
+- Fix provider driven target installation
+- Provide a check to see if a named target already exists
+- Remove logging from main code area
+- Fix systemd setup to not use user session
+
+* Thu Jul 25 2013 David Greaves <david@dgreaves.com> - 0.6.3-1
+- Fix Engine and Target update; fix some missing translations
+
+* Thu Jul 25 2013 David Greaves <david@dgreaves.com> - 0.6.2-1
+- Don't include the Toolchain add in the Provider conditional inclusion
+
+* Thu Jul 25 2013 David Greaves <david@dgreaves.com> - 0.6.1-1
+- Use sdk-manage --target/--sdk --upgradable
+- Add update info overlay on hover on update buttons
+- Comment out emulator section
+- Ensure target.id works
+
+* Wed Jul 24 2013 David Greaves <david@dgreaves.com> - 0.6.0-1
+- Refactor code; add Providers and handle updates
+
+* Fri Feb 22 2013 David Greaves <david@dgreaves.com> - 0.5.5-1
+- Add missing translation strings
+
+* Fri Feb 22 2013 David Greaves <david@dgreaves.com> - 0.5.4-1
+- Refactor webapp to be more DRY
+- Use cached fonts
+- Merge Sailfish layout changes
+- Disable SDK upgrade for now
+- Fixes for target management
+
+* Thu Feb 14 2013 David Greaves <david@dgreaves.com> - 0.5.3-1
+- Add Tom's -devel package manager
+* Sun Feb 01 2013 Maciej Blomberg <maciej.blomberg@jollamobile.com> - 0.5.2-1
+- Hidden debugging view
+- Hard-timeouts work for sudo-ed processes
+- Smarter buttons in toolchains management page
+* Fri Feb 01 2013 David Greaves <david@dgreaves.com> - 0.5.1-1
+- Updated package list update function to mirror sdk-manage
+  script output
+- Added button to force target synchronisation
+* Thu Jan 31 2013 Maciej Blomberg <maciej.blomberg@jollamobile.com> - 0.5.0-1
+- Merged in Alterego's code for on-target package installation. No UI yet.
+* Sun Jan 27 2013 Maciej Blomberg <maciej.blomberg@jollamobile.com> - 0.4.0-2
+- HAML templates moved to -customization package
+* Tue Jan 15 2013 Maciej Blomberg <maciej.blomberg@jollamobile.com> - 0.4.0-1
+- ts-based l10n
+* Mon Dec 20 2012 Maciej Blomberg <maciej.blomberg@jollamobile.com> - 0.3.4-1
+- working target installation from dropdown-list
+* Mon Dec 20 2012 Maciej Blomberg <maciej.blomberg@jollamobile.com> - 0.3.3-1
+- mer targets list
+* Mon Dec 20 2012 Maciej Blomberg <maciej.blomberg@jollamobile.com> - 0.3.2-1
+- prettier graphics
+* Mon Dec 17 2012 Maciej Blomberg <maciej.blomberg@jollamobile.com> - 0.3.1-2
+- package splitting, for easy customization
+* Mon Dec 17 2012 Maciej Blomberg <maciej.blomberg@jollamobile.com> - 0.3.0-1
+- major re-factoring
+* Tue Nov 20 2012 Henrik Saari <henrik.saari@jollamobile.com> - 0.2.8-2
+- check in %postun if action is upgrade. If so do not delete symlink
+* Thu Nov 15 2012 Henrik Saari <henrik.saari@jollamobile.com> - 0.2.8-1
+- Hover effects for navication links and buttons
+* Wed Nov 14 2012 Henrik Saari <henrik.saari@jollamobile.com> - 0.2.7-1
+- more compact look with better navigation links
+- prevent launching multiple processes by clicking install links many times
+* Fri Nov 09 2012 Henrik Saari <henrik.saari@jollamobile.com> - 0.2.6-1
+- toolchain and target management to their own page
+- fix .spec file to start app when installed
+* Tue Nov 06 2012 Henrik Saari <henrik.saari@jollamobile.com> - 0.2.5-1
+- better graphics layout
+* Tue Nov 06 2012 Henrik Saari <henrik.saari@jollamobile.com> - 0.2.4-1
+- re-design the look. Now more Mer-like
+- installation progress
+* Mon Nov 05 2012 Henrik Saari <henrik.saari@jollamobile.com> - 0.2.3-1
+- Make it more blue
+* Thu Nov 01 2012 Henrik Saari <henrik.saari@jollamobile.com> - 0.2.2-1
+- add %postun for removing .service symlink
+- modify .service to use WorkinDirectory and User
+* Wed Oct 31 2012 Henrik Saari <henrik.saari@jollamobile.com> - 0.2.1-1
+- change sb2_manage -> sdk-manage
+- add upgrade sdk button
+* Tue Oct 30 2012 Henrik Saari <henrik.saari@jollamobile.com> - 0.2-2
+- add systemd service file
+* Thu Oct 26 2012 Henrik Saari <henrik.saari@jollamobile.com> - 0.2-1
+- use sb2_manage script for target management
+* Thu Oct 25 2012 David Greaves <david@dgreaves.com> - 0.1-1
+- Initial packaging of sdk-webapp
+
