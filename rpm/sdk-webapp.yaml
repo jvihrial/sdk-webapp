@@ -17,7 +17,7 @@ Requires:
   - sdk-webapp-customization >= 0.4.0-2
   - sdk-utils >= 0.57
 Configure: none
-SetupOptions: -q -n src
+SetupOptions: -q -n %{name}-%{version}
 Files:
   - '%defattr(-,mersdk,mersdk)'
   - '%{_libdir}/%{name}-bundle/config.ru'
